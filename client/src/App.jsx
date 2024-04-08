@@ -7,10 +7,12 @@ import SigninPage from './pages/Signinpage.jsx';
 import SignUpPage from './pages/SinUppage.jsx';
 import DashboardPage from './pages/Dashboardpage';
 import ProjectsPage from './pages/projectspage';
+import Header from './components/Header.jsx';
 
 export default function Main() {
   return (
     <BrowserRouter>
+    <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />  {/* Use the renamed component */}
         <Route path="/about" element={<AboutPage />} />
